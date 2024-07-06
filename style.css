@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #222;
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.card {
+	width: 380px;
+	height: 580px;
+	border: 2px solid;
+	border-color: #ec45f2 #0cf;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px 10px;
+}
+
+.card_img {
+	width: 150px;
+	height: 150px;
+	background: linear-gradient(#0cf, #ec45f2, #0cf, #ec45f2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.card_img img {
+	width: 140px;
+	height: 137px;
+	border-radius: 50%;
+	background-color: #021a2f;
+}
+
+.card_content {
+	text-align: center;
+	color: #fff;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.card_content h2 {
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.card_content h2:hover {
+	color: #0cf;
+}
+
+.card_content h4 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: #f0e9e9;
+}
+
+.card_content p {
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: #f7f7f7;
+}
+
+.card_contact {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-left: 80px;
+	gap: 8px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.card_contact a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+.card_contact a i {
+	color: #0cf;
+	transition: all 0.3s ease-in-out;
+}
+
+.card_contact a:hover,
+.card_contact a:hover i {
+	color: #ec45f2;
+	transform: scale(1.05);
+}
+
+.card_social {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	justify-content: center;
+	margin: 15px;
+}
+
+.card_social a {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: #0cf;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease-in-out;
+}
+
+.card_social a i {
+	font-size: 22px;
+}
+
+.card_social a:hover {
+	background-color: #ec45f2;
+}
+
+.card_button {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.card_button :nth-child(1) {
+	background-color: transparent;
+	border: 1px solid;
+	border-color: #0cf #ec45f2;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	transition: all 0.3s ease-in-out;
+}
+
+.card_button :nth-child(2) {
+	background: #0cf;
+	border: 1px solid;
+	border-color: transparent;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	transition: all 0.3s ease-in-out;
+}
+
+.card_button :nth-child(1):hover {
+	background-color: #0cf;
+	border-color: transparent;
+}
+
+.card_button :nth-child(2):hover {
+	background-color: transparent;
+	border-color: #0cf #ec45f2;
+}
